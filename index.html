@@ -2,186 +2,180 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Links Page</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gulaboarts</title>
 
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            padding: 50px;
-            /* 🔴 FIX 1: height: 50vh; को min-height: 100vh; से बदला गया */
-            min-height: 100vh; 
-            margin: 0;
-            background-color: #050505;
-            background-size: 400% 400%;
-            animation: gradientMove 12s ease infinite;
-            
-            /* 🔴 FIX 2: .main को सेंटर करने के लिए Flexbox जोड़ा गया */
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-        }
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
-        @keyframes gradientMove {
-            0% {
-                background-position: 0% 50%;
-            }
+<style>
 
-            50% {
-                background-position: 100% 50%;
-            }
+body{
+font-family: Arial, sans-serif;
+text-align:center;
+padding:50px;
+min-height:100vh;
+margin:0;
+background-color:#050505;
+background-size:400% 400%;
+animation:gradientMove 12s ease infinite;
 
-            100% {
-                background-position: 0% 50%;
-            }
-        }
+display:flex;
+justify-content:center;
+align-items:center;
+flex-direction:column;
+}
 
-        h1 {
-            color: #fbf9f9;
-            margin-bottom: 30px;
-            text-shadow: 2px 2px 6px rgba(185, 9, 9, 0.3);
-            font-size: 50px;
-            padding-top: 0;
-            padding-bottom: 30px;
-            font-family: serif;
-        }
+@keyframes gradientMove{
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
+}
 
-        .link-btn {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 12px;
-            margin: 15px auto;
-            padding: 25px 40px;
-            width: 280px;
-            background: rgba(10, 10, 10, 0.6);
-            color: rgb(255, 255, 255);
-            text-decoration: none;
-            border-radius: 50px;
-            font-size: 18px;
-            font-weight: 700;
-            box-shadow: 0px 4px 15px rgba(20, 19, 19, 0.3);
-            transition: transform 0.2s, background 0.3s;
-            backdrop-filter: blur(5px);
-            font-size: 20px;
-        }
+h1{
+color:#fbf9f9;
+margin-bottom:30px;
+text-shadow:2px 2px 6px rgba(185,9,9,0.3);
+font-size:50px;
+padding-bottom:30px;
+font-family:serif;
+}
 
-        .link-btn:hover {
-            transform: scale(1.08);
-            background: rgba(149, 30, 78, 0.907);
-        }
+.link-btn{
+display:flex;
+align-items:center;
+justify-content:center;
+gap:12px;
+margin:15px auto;
+padding:25px 40px;
+width:280px;
+background:rgba(10,10,10,0.6);
+color:white;
+text-decoration:none;
+border-radius:50px;
+font-size:20px;
+font-weight:700;
+box-shadow:0px 4px 15px rgba(20,19,19,0.3);
+transition:transform 0.2s, background 0.3s;
+backdrop-filter:blur(5px);
+}
 
-        .instagram .icon {
-            color: #E1306C;
-        }
+.link-btn:hover{
+transform:scale(1.08);
+background:rgba(149,30,78,0.907);
+}
 
-        .facebook .icon {
-            color: #1877F2;
-        }
+.instagram .icon{
+color:#E1306C;
+}
 
-        .custom-link .icon {
-            color: #28a745;
-        }
+.location .icon{
+color:#ff3b3b;
+}
 
-        .icon {
-            font-size: 22px;
-        }
+.custom-link .icon{
+color:#28a745;
+}
 
-        .main {
-            background-color: #510909;
-            padding: 50px;
-            width: 40%;
-            border-radius: 30px;
-            justify-self: center;
-            /* 🔴 FIX 2: body में Flexbox का उपयोग करने के बाद margin-top हटा दिया गया */
-            margin-top: 0; 
-        }
+.icon{
+font-size:22px;
+}
 
-        @media (max-width: 768px) {
-            body {
-                padding: 20px;
-                height: auto;
-            }
+.main{
+background-color:#510909;
+padding:50px;
+width:40%;
+border-radius:30px;
+margin-top:0;
+}
 
-            .main {
-                width: 90%;
-                padding: 30px 20px;
-                /* 768px के लिए मार्जिन कम किया गया, क्योंकि body सेंटर कर रही है */
-                margin-top: 0; 
-            }
+@media (max-width:768px){
 
-            h1 {
-                font-size: 32px;
-                margin-bottom: 20px;
-                padding-bottom: 15px;
-            }
+body{
+padding:20px;
+height:auto;
+}
 
-            .link-btn {
-                width: 150px;
-                padding: 18px 20px;
-                font-size: 16px;
-                gap: 8px;
-            }
+.main{
+width:90%;
+padding:30px 20px;
+}
 
-            .icon {
-                font-size: 18px;
-            }
-        }
+h1{
+font-size:32px;
+margin-bottom:20px;
+padding-bottom:15px;
+}
 
-        @media (max-width: 480px) {
-            .main {
-                padding: 20px 15px;
-                /* 480px के लिए मार्जिन कम किया गया */
-                margin-top: 0; 
-            }
+.link-btn{
+width:150px;
+padding:18px 20px;
+font-size:16px;
+gap:8px;
+}
 
-            h1 {
-                font-size: 26px;
-            }
+.icon{
+font-size:18px;
+}
 
-            .link-btn {
-                font-size: 15px;
-                padding: 15px;
-                width: 150px;
-            }
-        }
+}
 
-        @media (min-width: 768px) and (max-width: 975px) {
-            .main {
-                width: 70%;
-                padding: 40px 25px;
-            }
+@media (max-width:480px){
 
-            .link-btn {
-                width: 100%;
-                max-width: 250px;
-                padding: 20px 25px;
-                font-size: 18px;
-            }
-        }
-    </style>
+.main{
+padding:20px 15px;
+}
+
+h1{
+font-size:26px;
+}
+
+.link-btn{
+font-size:15px;
+padding:15px;
+width:150px;
+}
+
+}
+
+@media (min-width:768px) and (max-width:975px){
+
+.main{
+width:70%;
+padding:40px 25px;
+}
+
+.link-btn{
+width:100%;
+max-width:250px;
+padding:20px 25px;
+font-size:18px;
+}
+
+}
+
+</style>
 </head>
 
 <body>
-    <div class="main">
-        <h1>Welcome to Gulaboarts</h1>
 
-        <a href="https://gulaboarts.com/" target="_blank" class="link-btn custom-link">
-            <i class="fa-solid fa-link icon"></i> gulaboarts.com
-        </a>
+<div class="main">
 
-        <a href="https://www.instagram.com/gulaboartsofficial?igsh=MWhvZjI1Ymszd3c0Yg==" target="_blank" class="link-btn instagram">
-            <i class="fab fa-instagram icon"></i> Instagram
-        </a>
+<h1>Welcome to Gulaboarts</h1>
 
-        <a href="https://www.facebook.com/people/_gulabo_arts_/100083410296874/" target="_blank" class="link-btn facebook">
-            <i class="fab fa-facebook icon"></i> Facebook
-        </a>
-    </div>
+<a href="https://gulaboarts.com/" target="_blank" class="link-btn custom-link">
+<i class="fa-solid fa-link icon"></i> gulaboarts.com
+</a>
+
+<a href="https://www.instagram.com/gulaboartsofficial?igsh=MWhvZjI1Ymszd3c0Yg==" target="_blank" class="link-btn instagram">
+<i class="fab fa-instagram icon"></i> Instagram
+</a>
+
+<a href="https://maps.app.goo.gl/NyjdHAqdv5rakPjXA" target="_blank" class="link-btn facebook">
+<i class="fa-solid fa-location-dot icon"></i> Location
+</a>
+
+</div>
+
 </body>
-
 </html>
